@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  /*font-family: -apple-system, system, sans-serif;*/
+}
+
+html,body {
+  margin:0;
+  padding:0;
+  height:100%; /* needed for container min-height */
+  font-family:arial,sans-serif;
+}
+
+#content {
+  width: 480px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.padded-8{
+  padding: 8px;
+}
+
+nav.navbar.navbar-default.navbar-static-top {
+  background: rgb(56, 116, 161);
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+
+ul.nav.navbar-nav {
+    padding-top: 6px;
+}
+
+.nav>li {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.nav>li:hover {
+  background: white;
+  border: none;
+}
+
+/* Dropdown To the left */
+.navbar-right .dropdown-menu {
+  width: 205px;
+  left: -1px;
+  border-top: none;
+  box-shadow: none;
+  padding: 0px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+/*.dropdown-content a:hover {
+  background-color: #f1f1f1
+}*/
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #fff;
+  color: black;   
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+}
+
+ul.dropdown-content.dropdown-menu {
+    /*height: 80vh;*/
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+/* Project container dropdown menu */
+ul.projects-container {
+    padding: 0px;
+    list-style: none;
+}
+
+ul.projects {
+    list-style: none;
+}
+
+div.projects {
+    width: 70%;
+    display: block;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-left: 1px solid rgb(238, 238, 238);
+}
+
+.projects ul{
+  list-style: none;
+  padding-left: 0px;
+  color: rgb(180, 179, 179);
+}
+
+div.group-image{
+  width: 30%;
+  text-align: center;
+  padding-top: 2px;
+  border-top: 1px solid rgb(238, 238, 238);
+}
+
+li.project-group{
+  display: inline-flex;
+  width: 100%;
+}
+
+.list-heading {
+  color: #3874a1;
+  font-weight: bold;
+  background: rgb(232, 241, 248);
+  margin-top: 5px;    
+}
+
+.list-heading a{
+  padding-left: 4px;
+}
+
+li.project a{
+  padding-left: 18px;
+}
+
+
+/*  Prevent menu collapse  */
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+
+/*  Filter Input  */
+#filter{
+  height: 32px;
+  width: 100%;
+  display: inline-flex;
+  border: 2px solid rgb(133, 178, 208);
+  box-shadow: 0px 0px 6px #6dafca;
+  border-radius: 4px;  
+}
+
+#filter img{
+  width: 26px;
+}
+
+#filter input{
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-top: 3px;
+}
+
+#filter input:hover, #filter input:active, #filter input:focus{
+  outline: none;
+}
+
+.btn-add-group {
+    font-size: 11px;
+    color: rgb(200, 200, 205);
+    padding-left: 17px;
+}
+
+span.highlight {
+  background-color: rgb(255, 252, 34);
+}
+
+.active-project {
+  background: #9ceef9;;
+}
